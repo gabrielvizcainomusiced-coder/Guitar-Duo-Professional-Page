@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iryna & Gabriel — Okanagan & Shuswap Duo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C96A;
+      --ink: #0E0D0B;
+      --ink-soft: #1C1A15;
+      --cream: #FAF7F2;
+      --muted: #9E967F;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+      /* Glassmorphism Variables */
+      --glass-bg: rgba(28, 26, 21, 0.4);
+      --glass-border: rgba(201, 168, 76, 0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--ink);
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(14, 13, 11, 0.7);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); text-decoration: none; opacity: 0.7; transition: 0.2s; }
+    .nav-links a:hover { opacity: 1; color: var(--gold); }
+
+    .nav-cta {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.55rem 1.4rem;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--ink); }
+
+    /* ─── HERO SECTION ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8rem 3rem 4rem;
+      position: relative;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 60% 80% at 75% 50%, rgba(201,168,76,0.08) 0%, transparent 70%),
+        linear-gradient(160deg, #0E0D0B 0%, #1C1A15 100%);
+      z-index: 0;
+    }
+
+   .hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3rem;
+}
+    
+    .hero-tag { 
+      font-size: 0.72rem; 
+      letter-spacing: 0.18em; 
+      text-transform: uppercase; 
+      color: var(--gold); 
+      margin-bottom: 1.5rem; 
+      display: block; 
+    }
+
+    .hero-title { 
+      font-family: var(--font-display); 
+      font-size: clamp(3.5rem, 9vw, 7.5rem); 
+      font-weight: 900; 
+      line-height: 0.95; 
+      margin-bottom: 0.15em; 
+      color: var(--cream);
+    }
+    .hero-title em { font-style: italic; color: var(--gold); }
+
+    .hero-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      font-style: italic;
+      color: var(--muted);
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+
+    .hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* 🔥 THIS is the key */
+  object-position: 50% 30%;
+
+  /* zoom in */
+  transform: scale(1.2);
+
+  border-radius: 12px;
+}
+
+
+    .btn-primary {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+    /* ─── VIDEO SHOWCASE ─── */
+    #showcase { padding: 4rem 3rem; background: var(--ink); }
+    .section-divider { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 4rem; text-transform: uppercase; font-size: 0.7rem; color: var(--gold); letter-spacing: 0.2em; }
+    .section-divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201,168,76,0.3), transparent); }
+
+.video-container {
+  width: 100%;
+  max-width: 1100px;   /* you can change this to 1200px if you want it bigger */
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--ink-soft);
+}
+
+/* THIS is the important part */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+    /* ─── OFFERINGS ─── */
+    #offer { padding: 7rem 3rem; background: var(--ink-soft); }
+    .offer-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .offer-card { background: var(--glass-bg); padding: 3rem 2rem; border: 1px solid var(--glass-border); transition: 0.3s; }
+    .offer-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+    .offer-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; color: var(--gold); }
+    .offer-card p { font-size: 0.9rem; line-height: 1.7; color: rgba(250,247,242,0.5); }
+
+    /* ─── GALLERY ─── */
+    .gallery-single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item.portrait {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  background: var(--ink-soft);
+}
+
+/* Image */
+.gallery-item.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  transform: scale(1.08);
+
+  filter: brightness(0.94) contrast(1.02) saturate(0.92);
+}
+
+.gallery-item.portrait {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+    @media (max-width: 800px) {
+      .offer-cards, .gallery-grid { grid-template-columns: 1fr; }
+      #hero { padding: 7rem 1.5rem; }
+    }
+
+    @media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    order: -1; /* image goes on top on mobile */
+  }
+}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#hero" class="nav-logo">Iryna &amp; Gabriel</a>
+    <ul class="nav-links">
+      <li><a href="#showcase">Watch</a></li>
+      <li><a href="#offer">Atmosphere</a></li>
+      <li><a href="#contact">Inquiry</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Book Now</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+  
+  <!-- LEFT SIDE (TEXT) -->
+  <div class="hero-text">
+    <span class="hero-tag">Okanagan &amp; Shuswap, BC</span>
+    <h1 class="hero-title">Iryna<br />&amp; <em>Gabriel</em></h1>
+    <h2 class="hero-h2">Acoustic Elegance</h2>
+    <h3 class="hero-h3">Sun-drenched vineyard sets and sophisticated lounge vibes.</h3>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Check Availability</a>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE (IMAGE) -->
+  <div class="hero-image">
+    <img src="images/Portrait.JPG" alt="Iryna and Gabriel Portrait">
+  </div>
+
+</div>
+    </div>
+  </section>
+
+  <section id="showcase">
+  <div class="section-divider"><span>Live Showcase</span></div>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/U7YK-YtLVVM" 
+      title="Iryna & Gabriel Live Performance" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+  <section id="offer">
+    <div class="section-divider"><span>The Experience</span></div>
+    <div class="offer-cards">
+      <div class="offer-card">
+        <h3>Vineyard &amp; Patio</h3>
+        <p>A chill, curated atmosphere designed for wine country. Subtle acoustic layers that enhance the guest experience without overpowering conversation.</p>
+      </div>
+      <div class="offer-card">
+        <h3>Powerhouse Vocals</h3>
+        <p>From stripped-back bossa nova to driving pop-rock anthems, Iryna’s range brings a high-fidelity energy to every performance.</p>
+      </div>
+      <div class="offer-card">
+        <h3>The Wireless Rig</h3>
+        <p>Safety and aesthetics are paramount. Our 100% wireless setup means zero cables on the floor, providing a clean look and zero trip hazards.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="gallery">
+  <div class="section-divider"><span>Captured Moments</span></div>
+
+  <div class="gallery-single">
+    <div class="gallery-item portrait">
+      <img src="images/Performing.JPG" alt="Live performance moment">
+    </div>
+  </div>
+
+</section>
+
+  <section id="contact" style="padding: 8rem 3rem; text-align: center; background: var(--ink);">
+    <h2 style="font-family:var(--font-display); font-size:3.5rem; margin-bottom:1rem;">Let’s set the <em>stage.</em></h2>
+    <p style="color:var(--muted); margin-bottom:3rem; max-width:500px; margin-left:auto; margin-right:auto;">Currently accepting bookings for the Summer 2026 season throughout the Okanagan and Shuswap.</p>
+    <a href="mailto:gabrielvizcainomusiced@gmail.com" class="btn-primary">Inquire via Email</a>
+    <p style="font-size:0.7rem; color:var(--gold); margin-top:2rem; text-transform:uppercase; letter-spacing:0.2em;">gabrielvizcainomusiced@gmail.com</p>
+  </section>
+
+  <footer style="padding:4rem 3rem; text-align:center; border-top:1px solid var(--glass-border); font-size:0.7rem; opacity:0.4; text-transform:uppercase; letter-spacing:0.2em;">
+    © 2026 Iryna &amp; Gabriel Duo · Serving the Okanagan &amp; Shuswap
+  </footer>
+
+</body>
+</html>
