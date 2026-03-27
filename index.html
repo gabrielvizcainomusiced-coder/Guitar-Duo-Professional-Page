@@ -30,9 +30,7 @@
       --glass-border: rgba(201, 168, 76, 0.15);
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: var(--font-body);
@@ -44,9 +42,7 @@
     /* ─── NAV ─── */
     nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0; left: 0; right: 0;
       z-index: 100;
       display: flex;
       align-items: center;
@@ -66,42 +62,16 @@
       text-decoration: none;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--cream);
-      text-decoration: none;
-      opacity: 0.7;
-      transition: 0.2s;
-    }
-
-    .nav-links a:hover {
-      opacity: 1;
-      color: var(--gold);
-    }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); text-decoration: none; opacity: 0.7; transition: 0.2s; }
+    .nav-links a:hover { opacity: 1; color: var(--gold); }
 
     .nav-cta {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.55rem 1.4rem;
-      border: 1px solid var(--gold);
-      color: var(--gold);
-      text-decoration: none;
-      transition: all 0.3s ease;
+      font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.55rem 1.4rem; border: 1px solid var(--gold);
+      color: var(--gold); text-decoration: none; transition: all 0.3s ease;
     }
-
-    .nav-cta:hover {
-      background: var(--gold);
-      color: var(--ink);
-    }
+    .nav-cta:hover { background: var(--gold); color: var(--ink); }
 
     /* ─── HERO ─── */
     #hero {
@@ -114,8 +84,7 @@
     }
 
     .hero-bg {
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background:
         radial-gradient(ellipse 60% 80% at 75% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 70%),
         linear-gradient(160deg, #0E0D0B 0%, #1C1A15 100%);
@@ -123,131 +92,52 @@
     }
 
     .hero-content {
-      position: relative;
-      z-index: 1;
+      position: relative; z-index: 1;
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
       align-items: center;
       gap: 3rem;
     }
 
-    .hero-tag {
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1.5rem;
-      display: block;
-    }
-
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: clamp(3.5rem, 9vw, 7.5rem);
-      font-weight: 900;
-      line-height: 0.95;
-      margin-bottom: 0.15em;
-      color: var(--cream);
-    }
-
-    .hero-title em {
-      font-style: italic;
-      color: var(--gold);
-    }
-
-    .hero-h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      font-weight: 400;
-      color: var(--cream);
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-h3 {
-      font-family: var(--font-display);
-      font-size: clamp(1rem, 2vw, 1.4rem);
-      font-style: italic;
-      color: var(--muted);
-      margin-bottom: 3rem;
-      max-width: 600px;
-    }
+    .hero-tag { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: block; }
+    .hero-title { font-family: var(--font-display); font-size: clamp(3.5rem, 9vw, 7.5rem); font-weight: 900; line-height: 0.95; margin-bottom: 0.15em; color: var(--cream); }
+    .hero-title em { font-style: italic; color: var(--gold); }
+    .hero-h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 400; color: var(--cream); margin-bottom: 0.5rem; }
+    .hero-h3 { font-family: var(--font-display); font-size: clamp(1rem, 2vw, 1.4rem); font-style: italic; color: var(--muted); margin-bottom: 3rem; max-width: 600px; }
 
     .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 30%;
-      transform: scale(1.2);
-      border-radius: 12px;
+      width: 100%; height: 100%; object-fit: cover;
+      object-position: 50% 30%; transform: scale(1.2); border-radius: 12px;
     }
 
     .btn-primary {
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      background: var(--gold);
-      color: var(--ink);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: 0.2s;
+      display: inline-block; padding: 1rem 2.5rem;
+      background: var(--gold); color: var(--ink);
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none; transition: 0.2s;
     }
-
-    .btn-primary:hover {
-      background: var(--gold-light);
-      transform: translateY(-2px);
-    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
 
     /* ─── SECTION DIVIDER ─── */
     .section-divider {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 4rem;
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      color: var(--gold);
-      letter-spacing: 0.2em;
+      display: flex; align-items: center; gap: 1.5rem;
+      margin-bottom: 4rem; text-transform: uppercase;
+      font-size: 0.7rem; color: var(--gold); letter-spacing: 0.2em;
     }
-
-    .section-divider::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, rgba(201, 168, 76, 0.3), transparent);
-    }
+    .section-divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201, 168, 76, 0.3), transparent); }
 
     /* ─── VIDEO ─── */
-    #showcase {
-      padding: 4rem 3rem;
-      background: var(--ink);
-    }
+    #showcase { padding: 4rem 3rem; background: var(--ink); }
 
     .video-container {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      aspect-ratio: 16 / 9;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--glass-border);
-      background: var(--ink-soft);
+      width: 100%; max-width: 1100px; margin: 0 auto;
+      aspect-ratio: 16 / 9; position: relative; overflow: hidden;
+      border: 1px solid var(--glass-border); background: var(--ink-soft);
     }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    /* ─── OFFER CARDS — 4 columns ─── */
-    #offer {
-      padding: 7rem 3rem;
-      background: var(--ink-soft);
-    }
+    /* ─── OFFER CARDS ─── */
+    #offer { padding: 7rem 3rem; background: var(--ink-soft); }
 
     .offer-cards {
       display: grid;
@@ -258,64 +148,25 @@
     }
 
     .offer-card {
-      background: var(--glass-bg);
-      padding: 2.5rem 1.75rem;
-      border: 1px solid var(--glass-border);
-      transition: 0.3s;
-      position: relative;
-      overflow: hidden;
+      background: var(--glass-bg); padding: 2.5rem 1.75rem;
+      border: 1px solid var(--glass-border); transition: 0.3s;
+      position: relative; overflow: hidden;
     }
-
     .offer-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 3px;
-      height: 0;
-      background: var(--gold);
-      transition: height 0.3s ease;
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 3px; height: 0; background: var(--gold); transition: height 0.3s ease;
     }
+    .offer-card:hover::before { height: 100%; }
+    .offer-card:hover { border-color: var(--gold); transform: translateY(-4px); }
 
-    .offer-card:hover::before {
-      height: 100%;
-    }
-
-    .offer-card:hover {
-      border-color: var(--gold);
-      transform: translateY(-4px);
-    }
-
-    .offer-card-icon {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      display: block;
-      opacity: 0.85;
-    }
-
-    .offer-card h3 {
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      margin-bottom: 0.85rem;
-      color: var(--gold);
-    }
-
-    .offer-card p {
-      font-size: 0.86rem;
-      line-height: 1.72;
-      color: rgba(250, 247, 242, 0.5);
-    }
+    .offer-card-icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; opacity: 0.85; }
+    .offer-card h3 { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.85rem; color: var(--gold); }
+    .offer-card p { font-size: 0.86rem; line-height: 1.72; color: rgba(250, 247, 242, 0.5); }
 
     /* ─── MEET THE DUO ─── */
-    #bio {
-      padding: 7rem 3rem;
-      background: var(--ink);
-    }
+    #bio { padding: 7rem 3rem; background: var(--ink); }
 
-    .bio-wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    .bio-wrap { max-width: 1100px; margin: 0 auto; }
 
     .bio-grid {
       display: grid;
@@ -333,231 +184,73 @@
       background: var(--glass-bg);
       transition: border-color 0.3s;
     }
+    .bio-card:hover { border-color: rgba(201, 168, 76, 0.35); }
 
-    .bio-card:hover {
-      border-color: rgba(201, 168, 76, 0.35);
-    }
-
-    /* Photo slot */
     .bio-photo {
-      width: 150px;
-      height: 190px;
+      width: 150px; height: 190px;
       border: 1px solid rgba(201, 168, 76, 0.22);
-      overflow: hidden;
-      flex-shrink: 0;
-      background: #1A1712;
+      overflow: hidden; flex-shrink: 0; background: #1A1712;
     }
-
-    .bio-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-    }
+    .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 
     .bio-photo-placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 0.6rem;
     }
+    .bio-photo-placeholder span { font-size: 1.5rem; opacity: 0.22; }
+    .bio-photo-placeholder p { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); opacity: 0.45; text-align: center; line-height: 1.6; }
 
-    .bio-photo-placeholder span {
-      font-size: 1.5rem;
-      opacity: 0.22;
-    }
+    .bio-name { font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: var(--cream); margin-bottom: 0.2rem; line-height: 1.2; }
+    .bio-name em { font-style: italic; color: var(--gold); }
 
-    .bio-photo-placeholder p {
-      font-size: 0.6rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      opacity: 0.45;
-      text-align: center;
-      line-height: 1.6;
-    }
+    .bio-role { font-size: 0.67rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
 
-    .bio-name {
-      font-family: var(--font-display);
-      font-size: 1.45rem;
-      font-weight: 700;
-      color: var(--cream);
-      margin-bottom: 0.2rem;
-      line-height: 1.2;
-    }
+    .bio-text p { font-size: 0.86rem; line-height: 1.82; color: rgba(250, 247, 242, 0.56); margin-bottom: 0.75rem; }
+    .bio-text p:last-of-type { margin-bottom: 0; }
 
-    .bio-name em {
-      font-style: italic;
-      color: var(--gold);
-    }
-
-    .bio-role {
-      font-size: 0.67rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    .bio-text p {
-      font-size: 0.86rem;
-      line-height: 1.82;
-      color: rgba(250, 247, 242, 0.56);
-      margin-bottom: 0.75rem;
-    }
-
-    .bio-text p:last-of-type {
-      margin-bottom: 0;
-    }
-
-    .bio-highlights {
-      margin-top: 1.1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-    }
-
-    .bio-tag {
-      font-size: 0.62rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gold);
-      border: 1px solid rgba(201, 168, 76, 0.28);
-      padding: 0.22rem 0.6rem;
-    }
+    .bio-highlights { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .bio-tag { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201, 168, 76, 0.28); padding: 0.22rem 0.6rem; }
 
     /* ─── GALLERY ─── */
-    #gallery {
-      padding: 5rem 3rem;
-      background: var(--ink-soft);
-    }
+    #gallery { padding: 5rem 3rem; background: var(--ink-soft); }
 
-    .gallery-single {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
+    .gallery-single { display: flex; justify-content: center; align-items: center; }
     .gallery-item.portrait {
-      width: 100%;
-      max-width: 420px;
-      aspect-ratio: 3 / 4;
-      overflow: hidden;
-      border-radius: 12px;
-      background: var(--ink-soft);
+      width: 100%; max-width: 420px; aspect-ratio: 3 / 4;
+      overflow: hidden; border-radius: 12px; background: var(--ink-soft);
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     }
-
-    .gallery-item.portrait img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 15%;
-      transform: scale(1.08);
-      filter: brightness(0.94) contrast(1.02) saturate(0.92);
-    }
+    .gallery-item.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; transform: scale(1.08); filter: brightness(0.94) contrast(1.02) saturate(0.92); }
 
     /* ─── CONTACT ─── */
-    #contact {
-      padding: 8rem 3rem;
-      text-align: center;
-      background: var(--ink);
-    }
-
-    #contact h2 {
-      font-family: var(--font-display);
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      margin-bottom: 1rem;
-    }
-
-    #contact h2 em {
-      font-style: italic;
-      color: var(--gold);
-    }
-
-    #contact p.sub {
-      color: var(--muted);
-      margin-bottom: 3rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #contact .email-line {
-      font-size: 0.7rem;
-      color: var(--gold);
-      margin-top: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-    }
+    #contact { padding: 8rem 3rem; text-align: center; background: var(--ink); }
+    #contact h2 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+    #contact h2 em { font-style: italic; color: var(--gold); }
+    #contact p.sub { color: var(--muted); margin-bottom: 3rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+    #contact .email-line { font-size: 0.7rem; color: var(--gold); margin-top: 2rem; text-transform: uppercase; letter-spacing: 0.2em; }
 
     /* ─── FOOTER ─── */
-    footer {
-      padding: 4rem 3rem;
-      text-align: center;
-      border-top: 1px solid var(--glass-border);
-      font-size: 0.7rem;
-      opacity: 0.4;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-    }
+    footer { padding: 4rem 3rem; text-align: center; border-top: 1px solid var(--glass-border); font-size: 0.7rem; opacity: 0.4; text-transform: uppercase; letter-spacing: 0.2em; }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 1024px) {
-      .offer-cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .offer-cards { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 900px) {
-      .bio-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-content {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-image {
-        order: -1;
-      }
+      .bio-grid { grid-template-columns: 1fr; }
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-image { order: -1; }
     }
 
     @media (max-width: 700px) {
-      nav {
-        padding: 1rem 1.5rem;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      #hero,
-      #showcase,
-      #offer,
-      #bio,
-      #gallery,
-      #contact {
-        padding: 5rem 1.5rem;
-      }
-
-      .bio-card {
-        grid-template-columns: 1fr;
-      }
-
-      .bio-photo {
-        width: 100%;
-        height: 220px;
-      }
-
-      .offer-cards {
-        grid-template-columns: 1fr;
-      }
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      #hero, #showcase, #offer, #bio, #gallery, #contact { padding: 5rem 1.5rem; }
+      .bio-card { grid-template-columns: 1fr; }
+      .bio-photo { width: 100%; height: 220px; }
+      .offer-cards { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -597,14 +290,15 @@
   <section id="showcase">
     <div class="section-divider"><span>Live Showcase</span></div>
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/U7YK-YtLVVM" title="Iryna & Gabriel Live Performance" frameborder="0"
+      <iframe src="https://www.youtube.com/embed/U7YK-YtLVVM" title="Iryna & Gabriel Live Performance"
+        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
     </div>
   </section>
 
-  <!-- THE EXPERIENCE — 4 cards, Iryna + Gabriel equally represented -->
+  <!-- THE EXPERIENCE -->
   <section id="offer">
     <div class="section-divider"><span>The Experience</span></div>
     <div class="offer-cards">
@@ -651,30 +345,31 @@
         <div class="bio-card">
           <div class="bio-photo">
             <img src="images/Irynabio.jpeg" alt="Iryna Viriasova" />
-            <div class="bio-photo-placeholder">
-              <span>🎤</span>
-              <p>Iryna's<br />Photo Here</p>
-            </div>
           </div>
           <div class="bio-text">
             <h3 class="bio-name"><em>Iryna</em> Viriasova</h3>
             <span class="bio-role">Vocalist · Vernon, BC</span>
             <p>
-              Iryna is a professional musician and performer specializing in
-              elegant live music for weddings and events. With over 10 years
-              of performance experience, she creates a refined and atmospheric
-              ambiance through expressive, heartfelt vocals.
+              Originally from Ukraine, Iryna brought a deep European musical
+              sensibility with her when she made her journey to Canada —
+              eventually putting down roots in Vernon, BC, where her voice
+              has become a fixture at the region's finest events.
             </p>
             <p>
-              Her philosophy is simple: the music isn't about her — it's about
-              you. She takes great care in crafting a personalized live music
-              experience that reflects your story, your vision, and the
-              atmosphere you want to create.
+              With over 10 years of professional performance experience, she
+              specializes in elegant live music for weddings and private
+              events, creating a refined and atmospheric ambiance through
+              expressive, heartfelt vocals.
+            </p>
+            <p>
+              Her philosophy is simple: the music isn't about her — it's
+              about you. Every performance is thoughtfully crafted to reflect
+              your story, your vision, and the atmosphere you want to create.
             </p>
             <div class="bio-highlights">
+              <span class="bio-tag">Ukraine</span>
               <span class="bio-tag">10+ Years Experience</span>
               <span class="bio-tag">Weddings &amp; Events</span>
-              <span class="bio-tag">Expressive Vocals</span>
             </div>
           </div>
         </div>
@@ -682,11 +377,7 @@
         <!-- GABRIEL -->
         <div class="bio-card">
           <div class="bio-photo">
-              <img src="images/Gabrielbio.jpg" alt="Gabriel Vizcaino" />
-            <div class="bio-photo-placeholder">
-              <span>🎸</span>
-              <p>Gabriel's<br />Photo Here</p>
-            </div>
+            <img src="images/Gabrielbio.jpg" alt="Gabriel Vizcaino" />
           </div>
           <div class="bio-text">
             <h3 class="bio-name"><em>Gabriel</em> Vizcaino</h3>
@@ -703,7 +394,7 @@
               lead guitarist for <em>The Rocky Horror Show</em>.
             </p>
             <div class="bio-highlights">
-              <span class="bio-tag">Jazz Studies · Barcelona</span>
+              <span class="bio-tag">Ecuador &amp; Barcelona</span>
               <span class="bio-tag">15+ Yrs Teaching</span>
               <span class="bio-tag">Lead Melody &amp; Jazz Improv</span>
             </div>
