@@ -521,7 +521,7 @@
         order: -1;
       }
     }
-
+    
     @media (max-width: 700px) {
       nav {
         padding: 1rem 1.5rem;
@@ -546,13 +546,28 @@
 
       .bio-photo {
         width: 100%;
-        height: 220px;
+        height: 300px; /* Slightly taller for better mobile framing */
       }
 
       .offer-cards {
         grid-template-columns: 1fr;
       }
+
+      
+      .gallery-single {
+        flex-direction: column; 
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .gallery-item.portrait {
+        width: 100%; 
+        max-width: 100%;
+        aspect-ratio: 4 / 5; 
+      }
     }
+    
+    
   </style>
 </head>
 
