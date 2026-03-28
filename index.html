@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iryna & Gabriel — Okanagan & Shuswap Duo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet" />
@@ -355,31 +356,6 @@
       display: block;
     }
 
-    .bio-photo-placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-    }
-
-    .bio-photo-placeholder span {
-      font-size: 1.5rem;
-      opacity: 0.22;
-    }
-
-    .bio-photo-placeholder p {
-      font-size: 0.6rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      opacity: 0.45;
-      text-align: center;
-      line-height: 1.6;
-    }
-
     .bio-name {
       font-family: var(--font-display);
       font-size: 1.45rem;
@@ -408,10 +384,6 @@
       line-height: 1.82;
       color: rgba(250, 247, 242, 0.56);
       margin-bottom: 0.75rem;
-    }
-
-    .bio-text p:last-of-type {
-      margin-bottom: 0;
     }
 
     .bio-highlights {
@@ -443,24 +415,24 @@
       gap: 1.5rem;
     }
 
-.gallery-item.portrait {
-  width: 45%;
-  max-width: 420px;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  border-radius: 12px;
-  background: var(--ink-soft);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-}
+    .gallery-item.portrait {
+      width: 45%;
+      max-width: 420px;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      border-radius: 12px;
+      background: var(--ink-soft);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
 
-.gallery-item.portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  transform: scale(1.08);
-  filter: brightness(0.94) contrast(1.02) saturate(0.92);
-}
+    .gallery-item.portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      transform: scale(1.08);
+      filter: brightness(0.94) contrast(1.02) saturate(0.92);
+    }
 
     /* ─── CONTACT ─── */
     #contact {
@@ -482,16 +454,38 @@
 
     #contact p.sub {
       color: var(--muted);
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    #contact .email-line {
+    /* ─── SOCIAL LINKS ─── */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+
+    .social-links a {
+      color: var(--gold);
+      font-size: 1.8rem;
+      transition: 0.3s;
+      opacity: 0.8;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      opacity: 1;
+      transform: translateY(-3px);
+      color: var(--gold-light);
+    }
+
+    .email-line {
       font-size: 0.7rem;
       color: var(--gold);
-      margin-top: 2rem;
+      margin-top: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.2em;
     }
@@ -564,7 +558,6 @@
 
 <body>
 
-  <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">Iryna &amp; Gabriel</a>
     <ul class="nav-links">
@@ -576,7 +569,6 @@
     <a href="#contact" class="nav-cta">Book Now</a>
   </nav>
 
-  <!-- HERO -->
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -593,7 +585,6 @@
     </div>
   </section>
 
-  <!-- VIDEO SHOWCASE -->
   <section id="showcase">
     <div class="section-divider"><span>Live Showcase</span></div>
     <div class="video-container">
@@ -604,7 +595,6 @@
     </div>
   </section>
 
-  <!-- THE EXPERIENCE -->
   <section id="offer">
     <div class="section-divider"><span>The Experience</span></div>
     <div class="offer-cards">
@@ -640,14 +630,12 @@
     </div>
   </section>
 
-  <!-- MEET THE DUO -->
   <section id="bio">
     <div class="bio-wrap">
       <div class="section-divider"><span>Meet the Duo</span></div>
 
       <div class="bio-grid">
 
-        <!-- IRYNA -->
         <div class="bio-card">
           <div class="bio-photo">
             <img src="images/Irynabio.jpeg" alt="Iryna Viriasova" />
@@ -657,20 +645,12 @@
             <span class="bio-role">Vocalist · Vernon, BC</span>
             <p>
               Originally from Ukraine, Iryna brought a deep European musical
-              sensibility with her when she made her journey to Canada —
-              eventually putting down roots in Vernon, BC, where her voice
-              has become a fixture at the region's finest events.
+              sensibility with her when she made her journey to Canada.
             </p>
             <p>
               With over 10 years of professional performance experience, she
-              specializes in elegant live music for weddings and private
-              events, creating a refined and atmospheric ambiance through
-              expressive, heartfelt vocals.
-            </p>
-            <p>
-              Her philosophy is simple: the music isn't about her — it's
-              about you. Every performance is thoughtfully crafted to reflect
-              your story, your vision, and the atmosphere you want to create.
+              specializes in refined live music for weddings and private
+              events.
             </p>
             <div class="bio-highlights">
               <span class="bio-tag">Ukraine</span>
@@ -680,7 +660,6 @@
           </div>
         </div>
 
-        <!-- GABRIEL -->
         <div class="bio-card">
           <div class="bio-photo">
             <img src="images/Gabrielbio.jpg" alt="Gabriel Vizcaino" />
@@ -691,13 +670,11 @@
             <p>
               Born in Quito, Ecuador, Gabriel earned his music degree before
               completing a Jazz Studies diploma at the Conservatori del Liceu
-              in Barcelona — attending masterclasses with legends like Pat
-              Metheny, Dave Holland, and Peter Bernstein.
+              in Barcelona.
             </p>
             <p>
               Now based in Vernon, he brings 15+ years of performing and
-              teaching across three countries. Recent stage credits include
-              lead guitarist for <em>The Rocky Horror Show</em>.
+              teaching across three countries.
             </p>
             <div class="bio-highlights">
               <span class="bio-tag">Ecuador &amp; Barcelona</span>
@@ -711,28 +688,35 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
   <section id="gallery">
-  <div class="section-divider"><span>Captured Moments</span></div>
-  <div class="gallery-single">
-    <div class="gallery-item portrait">
-      <img src="images/Performing.JPG" alt="Live performance moment" />
+    <div class="section-divider"><span>Captured Moments</span></div>
+    <div class="gallery-single">
+      <div class="gallery-item portrait">
+        <img src="images/Performing.JPG" alt="Live performance moment" />
+      </div>
+      <div class="gallery-item portrait">
+        <img src="images/Captured2.jpg" alt="Live performance moment" />
+      </div>
     </div>
-    <div class="gallery-item portrait">
-      <img src="images/Captured2.jpg" alt="Live performance moment" />
-    </div>
-  </div>
-</section>
+  </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <h2>Let's set the <em>stage.</em></h2>
     <p class="sub">Currently accepting bookings for the Summer 2026 season throughout the Okanagan and Shuswap.</p>
+    
+    <div class="social-links">
+      <a href="https://www.instagram.com/iryna_gabriel_duo" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61576449414027" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+
     <a href="mailto:gabrielvizcainomusiced@gmail.com" class="btn-primary">Inquire via Email</a>
     <p class="email-line">gabrielvizcainomusiced@gmail.com</p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     © 2026 Iryna &amp; Gabriel Duo · Serving the Okanagan &amp; Shuswap
   </footer>
