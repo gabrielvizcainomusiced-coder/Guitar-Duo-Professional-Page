@@ -6,22 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iryna & Gabriel — Okanagan & Shuswap Duo</title>
   <meta property="og:title" content="Iryna & Gabriel — Okanagan & Shuswap Duo">
-<meta property="og:description" content="Acoustic Elegance: Sun-drenched vineyard sets and sophisticated lounge vibes.">
-<meta property="og:image" content="https://gabrielvizcainomusiced-coder.github.io/Guitar-Duo-Professional-Page/images/Portrait.JPG">
-<meta property="og:url" content="https://gabrielvizcainomusiced-coder.github.io/Guitar-Duo-Professional-Page/">
-<meta property="og:type" content="website">
+  <meta property="og:description" content="Acoustic Elegance: Sun-drenched vineyard sets and sophisticated lounge vibes.">
+  <meta property="og:image" content="https://gabrielvizcainomusiced-coder.github.io/Guitar-Duo-Professional-Page/images/IrynaGabrielhero.jpg">
+  <meta property="og:url" content="https://gabrielvizcainomusiced-coder.github.io/Guitar-Duo-Professional-Page/">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --gold: #C9A84C;
@@ -34,545 +26,206 @@
       --font-body: 'DM Sans', sans-serif;
       --glass-bg: rgba(28, 26, 21, 0.4);
       --glass-border: rgba(201, 168, 76, 0.15);
+      /* Venue accent colours matching the original images */
+      --blue: #6B8EBF;
+      --green: #6B9E7A;
+      --terracotta: #C4784A;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: var(--font-body);
-      background: var(--ink);
-      color: var(--cream);
-      overflow-x: hidden;
-    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--ink); color: var(--cream); overflow-x: hidden; }
 
     /* ─── NAV ─── */
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
       padding: 1.25rem 3rem;
       background: rgba(14, 13, 11, 0.7);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
       border-bottom: 1px solid var(--glass-border);
     }
-
-    .nav-logo {
-      font-family: var(--font-display);
-      font-size: 1.15rem;
-      font-style: italic;
-      color: var(--gold);
-      text-decoration: none;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--cream);
-      text-decoration: none;
-      opacity: 0.7;
-      transition: 0.2s;
-    }
-
-    .nav-links a:hover {
-      opacity: 1;
-      color: var(--gold);
-    }
-
-    .nav-cta {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.55rem 1.4rem;
-      border: 1px solid var(--gold);
-      color: var(--gold);
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .nav-cta:hover {
-      background: var(--gold);
-      color: var(--ink);
-    }
+    .nav-logo { font-family: var(--font-display); font-size: 1.15rem; font-style: italic; color: var(--gold); text-decoration: none; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); text-decoration: none; opacity: 0.7; transition: 0.2s; }
+    .nav-links a:hover { opacity: 1; color: var(--gold); }
+    .nav-cta { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.55rem 1.4rem; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; transition: all 0.3s ease; }
+    .nav-cta:hover { background: var(--gold); color: var(--ink); }
 
     /* ─── HERO ─── */
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 8rem 3rem 4rem;
-      position: relative;
-    }
-
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 80% at 75% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 70%),
-        linear-gradient(160deg, #0E0D0B 0%, #1C1A15 100%);
-      z-index: 0;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      align-items: center;
-      gap: 3rem;
-    }
-
-    .hero-tag {
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1.5rem;
-      display: block;
-    }
-
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: clamp(3.5rem, 9vw, 7.5rem);
-      font-weight: 900;
-      line-height: 0.95;
-      margin-bottom: 0.15em;
-      color: var(--cream);
-    }
-
-    .hero-title em {
-      font-style: italic;
-      color: var(--gold);
-    }
-
-    .hero-h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      font-weight: 400;
-      color: var(--cream);
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-h3 {
-      font-family: var(--font-display);
-      font-size: clamp(1rem, 2vw, 1.4rem);
-      font-style: italic;
-      color: var(--muted);
-      margin-bottom: 3rem;
-      max-width: 600px;
-    }
-
-    .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 30%;
-      transform: scale(1.2);
-      border-radius: 12px;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      background: var(--gold);
-      color: var(--ink);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: 0.2s;
-    }
-
-    .btn-primary:hover {
-      background: var(--gold-light);
-      transform: translateY(-2px);
-    }
+    #hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 8rem 3rem 4rem; position: relative; }
+    .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 75% 50%, rgba(201,168,76,0.08) 0%, transparent 70%), linear-gradient(160deg, #0E0D0B 0%, #1C1A15 100%); z-index: 0; }
+    .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 3rem; }
+    .hero-tag { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: block; }
+    .hero-title { font-family: var(--font-display); font-size: clamp(3.5rem, 9vw, 7.5rem); font-weight: 900; line-height: 0.95; margin-bottom: 0.15em; color: var(--cream); }
+    .hero-title em { font-style: italic; color: var(--gold); }
+    .hero-h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 400; color: var(--cream); margin-bottom: 0.5rem; }
+    .hero-h3 { font-family: var(--font-display); font-size: clamp(1rem, 2vw, 1.4rem); font-style: italic; color: var(--muted); margin-bottom: 3rem; max-width: 600px; }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transform: scale(1.2); border-radius: 12px; }
+    .btn-primary { display: inline-block; padding: 1rem 2.5rem; background: var(--gold); color: var(--ink); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: 0.2s; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
 
     /* ─── SECTION DIVIDER ─── */
-    .section-divider {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 4rem;
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      color: var(--gold);
-      letter-spacing: 0.2em;
-    }
-
-    .section-divider::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, rgba(201, 168, 76, 0.3), transparent);
-    }
+    .section-divider { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 4rem; text-transform: uppercase; font-size: 0.7rem; color: var(--gold); letter-spacing: 0.2em; }
+    .section-divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201,168,76,0.3), transparent); }
 
     /* ─── VIDEO ─── */
-    #showcase {
-      padding: 4rem 3rem;
-      background: var(--ink);
-    }
-
-    .video-container {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      aspect-ratio: 16 / 9;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--glass-border);
-      background: var(--ink-soft);
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+    #showcase { padding: 4rem 3rem; background: var(--ink); }
+    .video-container { width: 100%; max-width: 1100px; margin: 0 auto; aspect-ratio: 16/9; position: relative; overflow: hidden; border: 1px solid var(--glass-border); background: var(--ink-soft); }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
     /* ─── OFFER CARDS ─── */
-    #offer {
-      padding: 7rem 3rem;
-      background: var(--ink-soft);
-    }
+    #offer { padding: 7rem 3rem; background: var(--ink-soft); }
+    .offer-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .offer-card { background: var(--glass-bg); padding: 2.5rem 1.75rem; border: 1px solid var(--glass-border); transition: 0.3s; position: relative; overflow: hidden; }
+    .offer-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--gold); transition: height 0.3s ease; }
+    .offer-card:hover::before { height: 100%; }
+    .offer-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .offer-card-icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; opacity: 0.85; }
+    .offer-card h3 { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.85rem; color: var(--gold); }
+    .offer-card p { font-size: 0.86rem; line-height: 1.72; color: rgba(250,247,242,0.5); }
 
-    .offer-cards {
+    /* ─── BIO ─── */
+    #bio { padding: 7rem 3rem; background: var(--ink); }
+    .bio-wrap { max-width: 1100px; margin: 0 auto; }
+    .bio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .bio-card { display: grid; grid-template-columns: 150px 1fr; gap: 1.75rem; align-items: start; padding: 2.25rem; border: 1px solid var(--glass-border); background: var(--glass-bg); transition: border-color 0.3s; }
+    .bio-card:hover { border-color: rgba(201,168,76,0.35); }
+    .bio-photo { width: 150px; height: 190px; border: 1px solid rgba(201,168,76,0.22); overflow: hidden; flex-shrink: 0; background: #1A1712; }
+    .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .bio-name { font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: var(--cream); margin-bottom: 0.2rem; line-height: 1.2; }
+    .bio-name em { font-style: italic; color: var(--gold); }
+    .bio-role { font-size: 0.67rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+    .bio-text p { font-size: 0.86rem; line-height: 1.82; color: rgba(250,247,242,0.56); margin-bottom: 0.75rem; }
+    .bio-highlights { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .bio-tag { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201,168,76,0.28); padding: 0.22rem 0.6rem; }
+
+    /* ─── GALLERY ─── */
+    #gallery { padding: 5rem 3rem; background: var(--ink-soft); }
+    .gallery-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; max-width: 1100px; margin: 0 auto; }
+    .gallery-item { overflow: hidden; border-radius: 8px; background: var(--ink); position: relative; }
+    .gallery-item.portrait { aspect-ratio: 3 / 4; }
+    .gallery-item.wide { grid-column: span 3; aspect-ratio: 16 / 11; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; filter: brightness(0.93) contrast(1.02); }
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    /* ─── CALENDAR ─── */
+    #calendar { padding: 7rem 3rem; background: var(--ink); }
+    .calendar-wrap { max-width: 1100px; margin: 0 auto; }
+
+    .calendar-months {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
     }
 
-    .offer-card {
-      background: var(--glass-bg);
-      padding: 2.5rem 1.75rem;
-      border: 1px solid var(--glass-border);
-      transition: 0.3s;
+    .cal-month { }
+
+    .cal-month-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .cal-events { display: flex; flex-direction: column; }
+
+    .cal-event {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 0;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(250,247,242,0.06);
       position: relative;
-      overflow: hidden;
     }
 
-    .offer-card::before {
+    .cal-event:last-child { border-bottom: none; }
+
+    /* Coloured left accent bar */
+    .cal-date {
+      display: flex;
+      align-items: flex-start;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .cal-date::before {
       content: '';
       position: absolute;
-      top: 0;
       left: 0;
+      top: 0.2rem;
+      bottom: 0.2rem;
       width: 3px;
-      height: 0;
-      background: var(--gold);
-      transition: height 0.3s ease;
+      border-radius: 2px;
+      background: var(--blue);
     }
 
-    .offer-card:hover::before {
-      height: 100%;
-    }
+    .cal-date.green::before { background: var(--green); }
+    .cal-date.terracotta::before { background: var(--terracotta); }
 
-    .offer-card:hover {
-      border-color: var(--gold);
-      transform: translateY(-4px);
-    }
-
-    .offer-card-icon {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      display: block;
-      opacity: 0.85;
-    }
-
-    .offer-card h3 {
+    .cal-date-text {
       font-family: var(--font-display);
       font-size: 1.1rem;
-      margin-bottom: 0.85rem;
-      color: var(--gold);
-    }
-
-    .offer-card p {
-      font-size: 0.86rem;
-      line-height: 1.72;
-      color: rgba(250, 247, 242, 0.5);
-    }
-
-    /* ─── MEET THE DUO ─── */
-    #bio {
-      padding: 7rem 3rem;
-      background: var(--ink);
-    }
-
-    .bio-wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .bio-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
-    }
-
-    .bio-card {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 1.75rem;
-      align-items: start;
-      padding: 2.25rem;
-      border: 1px solid var(--glass-border);
-      background: var(--glass-bg);
-      transition: border-color 0.3s;
-    }
-
-    .bio-card:hover {
-      border-color: rgba(201, 168, 76, 0.35);
-    }
-
-    .bio-photo {
-      width: 150px;
-      height: 190px;
-      border: 1px solid rgba(201, 168, 76, 0.22);
-      overflow: hidden;
-      flex-shrink: 0;
-      background: #1A1712;
-    }
-
-    .bio-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-    }
-
-    .bio-name {
-      font-family: var(--font-display);
-      font-size: 1.45rem;
       font-weight: 700;
       color: var(--cream);
-      margin-bottom: 0.2rem;
       line-height: 1.2;
     }
 
-    .bio-name em {
-      font-style: italic;
-      color: var(--gold);
+    .cal-info { padding-left: 0.5rem; }
+
+    .cal-venue {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--cream);
+      line-height: 1.3;
+      margin-bottom: 0.2rem;
     }
 
-    .bio-role {
-      font-size: 0.67rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    .bio-text p {
-      font-size: 0.86rem;
-      line-height: 1.82;
-      color: rgba(250, 247, 242, 0.56);
-      margin-bottom: 0.75rem;
-    }
-
-    .bio-highlights {
-      margin-top: 1.1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-    }
-
-    .bio-tag {
-      font-size: 0.62rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gold);
-      border: 1px solid rgba(201, 168, 76, 0.28);
-      padding: 0.22rem 0.6rem;
-    }
-
-    /* ─── GALLERY ─── */
-    #gallery {
-      padding: 5rem 3rem;
-      background: var(--ink-soft);
-    }
-
-    .gallery-single {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 1.5rem;
-    }
-
-    .gallery-item.portrait {
-      width: 45%;
-      max-width: 420px;
-      aspect-ratio: 3 / 4;
-      overflow: hidden;
-      border-radius: 12px;
-      background: var(--ink-soft);
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-    }
-
-    .gallery-item.portrait img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 15%;
-      transform: scale(1.08);
-      filter: brightness(0.94) contrast(1.02) saturate(0.92);
+    .cal-time {
+      font-size: 0.78rem;
+      color: var(--muted);
     }
 
     /* ─── CONTACT ─── */
-    #contact {
-      padding: 8rem 3rem;
-      text-align: center;
-      background: var(--ink);
-    }
-
-    #contact h2 {
-      font-family: var(--font-display);
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      margin-bottom: 1rem;
-    }
-
-    #contact h2 em {
-      font-style: italic;
-      color: var(--gold);
-    }
-
-    #contact p.sub {
-      color: var(--muted);
-      margin-bottom: 1.5rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* ─── SOCIAL LINKS ─── */
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 2.5rem 0;
-    }
-
-    .social-links a {
-      color: var(--gold);
-      font-size: 1.8rem;
-      transition: 0.3s;
-      opacity: 0.8;
-      text-decoration: none;
-    }
-
-    .social-links a:hover {
-      opacity: 1;
-      transform: translateY(-3px);
-      color: var(--gold-light);
-    }
-
-    .email-line {
-      font-size: 0.7rem;
-      color: var(--gold);
-      margin-top: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-    }
+    #contact { padding: 8rem 3rem; text-align: center; background: var(--ink-soft); }
+    #contact h2 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+    #contact h2 em { font-style: italic; color: var(--gold); }
+    #contact p.sub { color: var(--muted); margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .social-links { display: flex; justify-content: center; gap: 2rem; margin: 2.5rem 0; }
+    .social-links a { color: var(--gold); font-size: 1.8rem; transition: 0.3s; opacity: 0.8; text-decoration: none; }
+    .social-links a:hover { opacity: 1; transform: translateY(-3px); color: var(--gold-light); }
+    .email-line { font-size: 0.7rem; color: var(--gold); margin-top: 1rem; text-transform: uppercase; letter-spacing: 0.2em; }
 
     /* ─── FOOTER ─── */
-    footer {
-      padding: 4rem 3rem;
-      text-align: center;
-      border-top: 1px solid var(--glass-border);
-      font-size: 0.7rem;
-      opacity: 0.4;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-    }
+    footer { padding: 4rem 3rem; text-align: center; border-top: 1px solid var(--glass-border); font-size: 0.7rem; opacity: 0.4; text-transform: uppercase; letter-spacing: 0.2em; }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 1024px) {
-      .offer-cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .offer-cards { grid-template-columns: repeat(2, 1fr); }
+      .calendar-months { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 900px) {
-      .bio-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-content {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-image {
-        order: -1;
-      }
+      .bio-grid { grid-template-columns: 1fr; }
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-image { order: -1; }
     }
-    
+
     @media (max-width: 700px) {
-      nav {
-        padding: 1rem 1.5rem;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      #hero,
-      #showcase,
-      #offer,
-      #bio,
-      #gallery,
-      #contact {
-        padding: 5rem 1.5rem;
-      }
-
-      .bio-card {
-        grid-template-columns: 1fr;
-      }
-
-      .bio-photo {
-        width: 100%;
-        height: 300px; /* Slightly taller for better mobile framing */
-      }
-
-      .offer-cards {
-        grid-template-columns: 1fr;
-      }
-
-      
-      .gallery-single {
-        flex-direction: column; 
-        align-items: center;
-        gap: 2rem;
-      }
-
-      .gallery-item.portrait {
-        width: 100%; 
-        max-width: 100%;
-        aspect-ratio: 4 / 5; 
-      }
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      #hero, #showcase, #offer, #bio, #gallery, #calendar, #contact { padding: 5rem 1.5rem; }
+      .bio-card { grid-template-columns: 1fr; }
+      .bio-photo { width: 100%; height: 300px; }
+      .offer-cards { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/9; }
+      .gallery-single { flex-direction: column; align-items: center; gap: 2rem; }
+      .calendar-months { grid-template-columns: 1fr; }
     }
-    
-    
   </style>
 </head>
 
@@ -584,11 +237,13 @@
       <li><a href="#showcase">Watch</a></li>
       <li><a href="#offer">Atmosphere</a></li>
       <li><a href="#bio">The Duo</a></li>
+      <li><a href="#calendar">Shows</a></li>
       <li><a href="#contact">Inquiry</a></li>
     </ul>
     <a href="#contact" class="nav-cta">Book Now</a>
   </nav>
 
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -600,62 +255,52 @@
         <a href="#contact" class="btn-primary">Check Availability</a>
       </div>
       <div class="hero-image">
-        <img src="images/Portrait.JPG" alt="Iryna and Gabriel Portrait" />
+        <img src="images/IrynaGabrielhero.jpg" alt="Iryna and Gabriel Portrait" />
       </div>
     </div>
   </section>
 
+  <!-- VIDEO -->
   <section id="showcase">
     <div class="section-divider"><span>Live Showcase</span></div>
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed/U7YK-YtLVVM" title="Iryna & Gabriel Live Performance" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
   <section id="offer">
     <div class="section-divider"><span>The Experience</span></div>
     <div class="offer-cards">
-
       <div class="offer-card">
         <span class="offer-card-icon">🍷</span>
         <h3>Vineyard &amp; Patio</h3>
-        <p>A chill, curated atmosphere designed for wine country. Subtle acoustic layers that enhance the guest
-          experience without overpowering conversation.</p>
+        <p>A chill, curated atmosphere designed for wine country. Subtle acoustic layers that enhance the guest experience without overpowering conversation.</p>
       </div>
-
       <div class="offer-card">
         <span class="offer-card-icon">🎤</span>
         <h3>Powerhouse Vocals</h3>
-        <p>From stripped-back bossa nova to driving pop-rock anthems, Iryna's range brings a high-fidelity energy to
-          every performance.</p>
+        <p>From stripped-back bossa nova to driving pop-rock anthems, Iryna's range brings a high-fidelity energy to every performance.</p>
       </div>
-
       <div class="offer-card">
         <span class="offer-card-icon">🎸</span>
         <h3>World-Class Guitar</h3>
-        <p>Gabriel brings conservatory-trained jazz improvisation and expressive lead melody playing — a sophisticated
-          guitar voice that anchors every set.</p>
+        <p>Gabriel brings conservatory-trained jazz improvisation and expressive lead melody playing — a sophisticated guitar voice that anchors every set.</p>
       </div>
-
       <div class="offer-card">
         <span class="offer-card-icon">📡</span>
         <h3>The Wireless Rig</h3>
-        <p>Our 100% wireless setup means zero cables on the floor — a clean, professional look and zero trip hazards for
-          your guests.</p>
+        <p>Our 100% wireless setup means zero cables on the floor — a clean, professional look and zero trip hazards for your guests.</p>
       </div>
-
     </div>
   </section>
 
+  <!-- BIO -->
   <section id="bio">
     <div class="bio-wrap">
       <div class="section-divider"><span>Meet the Duo</span></div>
-
       <div class="bio-grid">
-
         <div class="bio-card">
           <div class="bio-photo">
             <img src="images/Irynabio.jpeg" alt="Iryna Viriasova" />
@@ -663,15 +308,8 @@
           <div class="bio-text">
             <h3 class="bio-name"><em>Iryna</em> Viriasova</h3>
             <span class="bio-role">Vocalist · Vernon, BC</span>
-            <p>
-              Originally from Ukraine, Iryna brought a deep European musical
-              sensibility with her when she made her journey to Canada.
-            </p>
-            <p>
-              With over 10 years of professional performance experience, she
-              specializes in refined live music for weddings and private
-              events.
-            </p>
+            <p>Originally from Ukraine, Iryna brought a deep European musical sensibility with her when she made her journey to Canada.</p>
+            <p>With over 10 years of professional performance experience, she specializes in refined live music for weddings and private events.</p>
             <div class="bio-highlights">
               <span class="bio-tag">Ukraine</span>
               <span class="bio-tag">10+ Years Experience</span>
@@ -679,7 +317,6 @@
             </div>
           </div>
         </div>
-
         <div class="bio-card">
           <div class="bio-photo">
             <img src="images/Gabrielbio.jpg" alt="Gabriel Vizcaino" />
@@ -687,19 +324,283 @@
           <div class="bio-text">
             <h3 class="bio-name"><em>Gabriel</em> Vizcaino</h3>
             <span class="bio-role">Guitarist · Vernon, BC</span>
-            <p>
-              Born in Quito, Ecuador, Gabriel earned his music degree before
-              completing a Jazz Studies diploma at the Conservatori del Liceu
-              in Barcelona.
-            </p>
-            <p>
-              Now based in Vernon, he brings 15+ years of performing and
-              teaching across three countries.
-            </p>
+            <p>Born in Quito, Ecuador, Gabriel earned his music degree before completing a Jazz Studies diploma at the Conservatori del Liceu in Barcelona.</p>
+            <p>Now based in Vernon, he brings 15+ years of performing and teaching across three countries.</p>
             <div class="bio-highlights">
               <span class="bio-tag">Ecuador &amp; Barcelona</span>
               <span class="bio-tag">15+ Yrs Teaching</span>
               <span class="bio-tag">Lead Melody &amp; Jazz Improv</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="section-divider"><span>Captured Moments</span></div>
+    <div class="gallery-grid">
+      <div class="gallery-item portrait">
+        <img src="images/gabrielps.png" alt="Gabriel playing guitar" style="object-position: center 15%;" />
+      </div>
+      <div class="gallery-item portrait">
+        <img src="images/irynaps.jpg" alt="Iryna at the microphone" style="object-position: center 10%;" />
+      </div>
+      <div class="gallery-item portrait">
+        <img src="images/ps1.jpg" alt="Iryna and Gabriel duo shot" style="object-position: center 5%;" />
+      </div>
+      <div class="gallery-item wide">
+        <img src="images/ps2.jpg" alt="Iryna and Gabriel performing" style="object-position: center center;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar">
+    <div class="calendar-wrap">
+      <div class="section-divider"><span>Upcoming Shows</span></div>
+
+      <div class="calendar-months">
+
+        <!-- MAY -->
+        <div class="cal-month">
+          <div class="cal-month-title">May</div>
+          <div class="cal-events">
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 21</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 28</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date green">
+                <span class="cal-date-text">Sun 31</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Privato Winery (Kamloops)</div>
+                <div class="cal-time">12:30 PM – 3:30 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JUNE -->
+        <div class="cal-month">
+          <div class="cal-month-title">June</div>
+          <div class="cal-events">
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 04</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 11</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 18</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 25</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date terracotta">
+                <span class="cal-date-text">Fri 26</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Ex Nihilo Vineyards (Lake Country)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date green">
+                <span class="cal-date-text">Sun 28</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Privato Winery (Kamloops)</div>
+                <div class="cal-time">2:00 PM – 4:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JULY -->
+        <div class="cal-month">
+          <div class="cal-month-title">July</div>
+          <div class="cal-events">
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 02</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 09</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 16</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 23</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 30</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AUGUST -->
+        <div class="cal-month">
+          <div class="cal-month-title">August</div>
+          <div class="cal-events">
+            <div class="cal-event">
+              <div class="cal-date green">
+                <span class="cal-date-text">Sun 02</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Privato Winery (Kamloops)</div>
+                <div class="cal-time">2:00 PM – 4:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 06</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date terracotta">
+                <span class="cal-date-text">Fri 07</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Ex Nihilo Vineyards (Lake Country)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 13</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 20</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 27</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEPTEMBER -->
+        <div class="cal-month">
+          <div class="cal-month-title">September</div>
+          <div class="cal-events">
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 03</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date blue">
+                <span class="cal-date-text">Thu 10</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Fancy's Cold Cuts (Kelowna)</div>
+                <div class="cal-time">7:00 PM – 9:00 PM</div>
+              </div>
+            </div>
+            <div class="cal-event">
+              <div class="cal-date green">
+                <span class="cal-date-text">Sun 27</span>
+              </div>
+              <div class="cal-info">
+                <div class="cal-venue">Privato Winery (Kamloops)</div>
+                <div class="cal-time">12:30 PM – 3:30 PM</div>
+              </div>
             </div>
           </div>
         </div>
@@ -708,22 +609,10 @@
     </div>
   </section>
 
-  <section id="gallery">
-    <div class="section-divider"><span>Captured Moments</span></div>
-    <div class="gallery-single">
-      <div class="gallery-item portrait">
-        <img src="images/Performing.JPG" alt="Live performance moment" />
-      </div>
-      <div class="gallery-item portrait">
-        <img src="images/Captured2.jpg" alt="Live performance moment" />
-      </div>
-    </div>
-  </section>
-
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Let's set the <em>stage.</em></h2>
     <p class="sub">Currently accepting bookings for the Summer 2026 season throughout the Okanagan and Shuswap.</p>
-    
     <div class="social-links">
       <a href="https://www.instagram.com/iryna_gabriel_duo" target="_blank" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
@@ -732,9 +621,8 @@
         <i class="fab fa-facebook"></i>
       </a>
     </div>
-
-    <a href="mailto:gabrielvizcainomusiced@gmail.com" class="btn-primary">Inquire via Email</a>
-    <p class="email-line">gabrielvizcainomusiced@gmail.com</p>
+    <a href="mailto:irynagabrielduo@gmail.com" class="btn-primary">Inquire via Email</a>
+    <p class="email-line">irynagabrielduo@gmail.com</p>
   </section>
 
   <footer>
@@ -742,5 +630,4 @@
   </footer>
 
 </body>
-
 </html>
